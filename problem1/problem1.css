@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root {
+    --font1: 'Abril Fatface', cursive;
+    --font2: 'Abril Fatface', cursive;
+    background-image: url(img/gardient.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+*root {
+    margin: 0px;
+    padding: 0px;
+}
+
+.first-part {}
+
+.first-top {
+    height: 634px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    content: " ";
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-image: url(img/water.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: absolute; */
+    image-rendering: optimizeSpeed;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.first-top::after {
+    /* margin-top: 50px; */
+}
+
+.first-top .nav {
+    nav-index: auto;
+    z-index: 1;
+    display: flex;
+    height: 20px;
+    flex-direction: row;
+}
+
+.first-top .nav a {
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 60px;
+    font-size: larger;
+    color: whitesmoke;
+}
+
+.first-top .nav a::first-letter {
+    color: rgba(18, 222, 134, 0.928);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.first-top .nav a:hover {
+    text-decoration: underline rgba(18, 222, 134, 0.928) 2px;
+}
+
+.middle-content {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    ;
+    font-family: var(--font2);
+    font-size: x-large;
+}
+
+.middle-content h1 {
+    text-shadow: #0be8b0e4 1px 1px 30px;
+    transition: all 0.3s ease;
+}
+
+.middle-content h1:hover {
+    transform: scale(1.08);
+}
+
+.middle-content h1::first-letter {
+    color: rgba(18, 222, 134, 0.928);
+}
+
+.bg-img-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 330px;
+}
+
+.bg-img-2::after {
+    content: " ";
+    position: absolute;
+    background-image: url(img/bg-with-treeRoot.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    opacity: 0.9;
+    scroll-behavior: smooth;
+    image-rendering: optimizeSpeed;
+}
+
+.bg-img-2 h1 {
+    z-index: 1;
+    color: #EFFFFD;
+    padding: 10px;
+    word-spacing: 8px;
+    transition: all 1.2s ease;
+    margin-left: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-img-2 h3 {
+    z-index: 1;
+    color: #EFFFFD;
+    word-spacing: 5px;
+    transition: all 1.2s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: fit-content;
+}
+
+h3 {
+    margin-left: 30px;
+    display: flex;
+}
+
+.bg-img-2 > h3:hover  {
+        
+    color: #d7b8ff;
+    transform:scale(1.06)
+}
+
+.section1 {
+    /* background-color: 9A86A4; */
+    background-size: cover;
+    text-align: center;
+    /* border-radius: 10px; */
+    color: whitesmoke;
+}
+
+.bg-img-3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+    /* align-items: center; */
+    bottom: 16px;
+}
+
+.bg-img-3 h1 {
+    z-index: 2;
+    color: #3e1b83f6;
+    
+    padding: 30px;
+    word-spacing: 8px;
+    margin-top: 250px;
+    transition: all 1.2s ease;
+    display: flex;
+    width: 900px;
+    flex-direction: row;
+    justify-content: flex-end;
+   text-align: center;
+}
+
+.bg-img-3::after {
+    content: " ";
+    position: absolute;
+    background-image: url(img/bg-with-mountain.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.bg-img-3 h1:hover {
+    transform: scaleX(1.05)
+}
+
+.bg-img-4 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 330px;
+    align-items: flex-start;
+}
+
+.bg-img-4::after {
+    content: " ";
+    position: absolute;
+    background-image: url(img/bg-with-bird.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bg-img-4 h1 {
+    z-index: 1;
+    display: flex;
+    width: 763px;
+    flex-direction: row;
+    justify-content: center;
+   
+   
+  
+}
+
+.section2 {
+    /* background-color: #F6EABE; */
+    width: 100%;
+    /* height: 1%; */
+    text-align: center;
+    color: white;
+}
+
+.bg-img-5 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 335px;
+    bottom: 16px;
+}
+
+.bg-img-5::after {
+    content: " ";
+    position: absolute;
+    background-image: url(img/bg-with-handBird.jpg );
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.bg-img-6 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+    align-items: flex-start;
+}
+
+.bg-img-6::after {
+    content: " ";
+    position: absolute;
+    background-image: url(img/waterfall.jpg);
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@media (max-width:900px) {
+    .middle-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .first-top{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .bg-img-3 > h1 {
+
+
+        justify-content: center;
+            }
+            .bg-img-4 > h1 {
+
+
+                justify-content: center;
+                
+                    }
+
+            
+}
+@media (max-width:750px) {
+   .nav{
+    justify-content: center;
+   padding-right: 50px;
+   }
+    .middle-content{
+        padding-left: 100px;
+    }
+    .bg-img-3 > h2 {
+
+
+justify-content: center;
+    }
+    .bg-img-4 > h1 {
+
+
+        justify-content: center;
+        
+            }
+            .nav{
+                display: flex;
+                position: absolute;
+            }
+            .middle-content{
+                display: flex;
+               
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+}
+@media (max-width:510px){
+.middle-content{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+   
+}
+}

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+    --font1: "Abril Fatface", cursive;
+    padding: 30px;
+}
+
+.font1 {
+    font-family: var(--font1);
+}
+
+body {
+    background-image: url(), linear-gradient(110deg, #f93d66, #6d47d9);
+    font-size: 20px;
+    background-attachment: fixed;
+    letter-spacing: -1.2px;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+button {
+    background: var(--yellow);
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 0 5px;
+    cursor: pointer;
+}
+
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--yellow);
+    text-align: center;
+    color: var(--black);
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+li :hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+[area-controls="menu-list"] {
+    display: none;
+}
+
+.top {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "hero hero cta""hero hero cta";
+}
+
+.hero {
+    grid-area: hero;
+    background: url(image/taco.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 40px;
+    display: grid;
+    align-content: center;
+    justify-items: left;
+    min-height: 400px;
+    justify-content: start;
+}
+
+.hero>* {
+    background: var(--yellow);
+    padding: 5px;
+}
+
+
+/* .hero>p{
+    background: var(--yellow);
+    padding: 5px
+} */
+
+.cta {
+    background-color: var(--yellow);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cta p {
+    margin: 0;
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+.cta2 {
+    grid-area: cta2;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.features {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-shadow: 15px 24px 54px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery h2 {
+    display: grid;
+    grid-column: 1/-1;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    font-style: italic;
+}
+
+.gallery h2:before,
+.gallery h2:after {
+    display: block;
+    content: "";
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+}
+
+.gallery h2:after {
+    --direction: right;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        perspective: 900px;
+    }
+    [area-controls="menu-list"] {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: rotateX(90deg);
+        transition: all 0.5s;
+    }
+    [area-expanded="true"]~ul {
+        max-height: 600px;
+        transform: rotateX(0);
+    }
+    [area-expanded="false"] .close {
+        display: none;
+    }
+    [area-expanded="true"] .close {
+        display: inline-block;
+    }
+    [area-expanded="true"] .open {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .top {
+        grid-template-areas: "hero hero""cta cta";
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .top {
+        grid-template-areas: "hero hero""cta cta";
+    }
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+@media (max-width: 300px) {
+    .top {
+        grid-template-areas: "hero hero""cta cta";
+    }
+    .top .cta {
+        grid-area: cta;
+    }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lato:wght@100&family=Lobster&family=Nanum+Gothic&family=Potta+One&family=Saira+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lato:wght@100&family=Lobster&family=Nanum+Gothic&family=Potta+One&display=swap');
+:root {
+    /* padding: 0 50px 0 50px; */
+    margin: 0;
+    --font: 'Nanum Gothic', sans-serif;
+    --font2: 'Potta One', cursive;
+}
+
+.font {
+    font-family: var(--font);
+}
+
+.font-size {
+    font-size: 14px;
+}
+
+.first-top {
+    background-color: #293f50;
+    display: grid;
+    /* flex-direction: column; */
+    padding: 0 200px 0 200px;
+    max-width: 100%;
+    min-height: 160px;
+    color: white;
+}
+
+.first-upper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(161px, 1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.hero-header {
+    display: grid;
+    /* min-height: 120px;  */
+    justify-content: center;
+}
+
+.nav-2 {
+    display: block;
+}
+
+.nav-bar ul {
+    display: flex;
+    column-gap: 20px;
+    /* row-gap: 20px; */
+    list-style: none;
+    /* margin: 20px 0; */
+    /* font-size: 20px; */
+    text-transform: uppercase;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar ul a:hover {
+    color: #4e944f;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-2 p {
+    display: flex;
+    justify-content: center;
+    color: rgb(82, 110, 82);
+}
+
+.hero-header h1 {
+    font-size: 50px;
+}
+
+.register-header h2,
+p {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.register-header h2 {
+    font-size: 45px;
+    color: #4e944f;
+}
+
+.register-header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( 90deg, rgba(192, 237, 166, 1) 0%, rgba(241, 236, 184, 1) 96%);
+    min-height: 160px;
+}
+
+.Registration-details {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.right-part input {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.input-field select {
+    display: flex;
+    cursor: pointer;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.c-pass p {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.left-part h2 {
+    color: #4e944f;
+}
+
+#purchase {
+    width: 120px;
+    background: #4e944fdc;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 15px;
+}
+
+.footer {
+    background-color: #293f50;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #4e944f;
+}
+
+.footer-nav {
+    padding-left: 325px;
+}
